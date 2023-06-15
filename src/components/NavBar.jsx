@@ -1,14 +1,27 @@
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
+import { CartWidget } from "./CartWidget";
+
+
+  
+
+
+
+
+
 export const NavBar = () => (
-    <header>
-        <nav>
-        <h6>MY ECOMMERCE</h6>
-            <ul>
-                <li>
-                    <a href="*">HOME</a>
-                    <a href="*">PRODUCTOS</a>
-                    <a href="*">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <Navbar bg="dark" variant="dark">
+    <Container>
+      <Navbar.Brand href="#home">Rabbit</Navbar.Brand>
+      <Nav className="me-auto">
+        <Nav.Link href="#home">Home</Nav.Link>
+        <Nav.Link href="#features">Features</Nav.Link>
+        <Nav.Link href="#pricing">Pricing</Nav.Link>
+      </Nav>
+      <CartWidget />
+    </Container>
+    
+  </Navbar>
 )

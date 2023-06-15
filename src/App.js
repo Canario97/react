@@ -1,7 +1,15 @@
+
+import { ItemListContainer } from "./components/ItemListContainer";
 import { NavBar } from "./components/NavBar";
 
-function App() {
-  return <NavBar/>
+export default function App() {
+  return (
+    <>
+  <NavBar/>
+  <ItemListContainer greeting="HOLA" />
+  </>
+  )  
 }
 
-export default App;
+
+
